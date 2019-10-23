@@ -1,0 +1,133 @@
+.App {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  display: table;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+.week {
+  display: flex;
+  height: 200px;
+  overflow-y: scroll;
+  background-color: rgb(56, 56, 58);
+  border-radius: 10px;
+  padding: 0 5px;
+}
+
+.day {
+  display: table;
+  color: white;
+  width: 100px;
+  background-color: rgb(56, 56, 58);
+  /* overflow-y: scroll; */
+  padding: 2px;
+  border-radius: 10px;
+}
+
+.day h4 {
+  font-weight: normal;
+  margin: 5px 0;
+}
+
+.event {
+  display: table;
+  width: 100%;
+  font-size: 0.8em;
+  overflow-wrap: anywhere;
+  background-color: rgb(100, 100, 100);
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.event:hover > .edit_delete_container {
+  display: block;
+}
+
+.event:hover > .save_cancel_container {
+  display: block;
+}
+
+.event_name {
+  padding: 0 3px;
+}
+
+.edit_delete_container,
+.save_cancel_container {
+  font-size: 1.2em;
+  display: none;
+  background-color: rgba(256, 256, 256, 0.5);
+  border-radius: 0 0 10px 10px;
+}
+
+.edit_delete_container .edit,
+.save_cancel_container .save {
+  display: inline-block;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.edit_delete_container .delete,
+.save_cancel_container .cancel {
+  display: inline-block;
+  color: rgb(255, 97, 97);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.save_cancel_container .cancel {
+  font-size: 0.9em;
+  position: relative;
+  top: -3px;
+}
+
+input.edit_text {
+  width: 80%;
+  /* overflow-wrap: anywhere; */
+  color: black;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  padding-top: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(20, 20, 20);
+}
+
+.form {
+  display: table;
+  width: 300px;
+  text-align: left;
+  /* background-color: rgb(100, 100, 100); */
+  padding: 15px 10px;
+  margin: 20px auto 0 auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.form select {
+  display: block;
+  padding: 3px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.form input {
+  width: 96%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.form button {
+  display: block;
+  width: 100%;
+  padding: 3px;
+  border-radius: 10px;
+  border: none;
+}
